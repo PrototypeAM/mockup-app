@@ -57,3 +57,30 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+--
+cd C:\Users\sarte\IdeaProjects\jbo\jbo-app
+npm run start
+
+Then open:
+
+http://127.0.0.1:4200
+
+
+To stop it, go back to the terminal where it is running and press:
+
+Ctrl+C
+
+If it asks Terminate batch job (Y/N)?, type:
+
+Y
+
+If port 4200 is ever stuck because a server is still running in the background, you can find and stop it with:
+
+Get-NetTCPConnection -LocalPort 4200
+Stop-Process -Id <OwningProcessId> -Force
+
+Codex
+Token usage: total=207,589 input=174,371 (+ 4,943,488 cached) output=33,218 (reasoning 2,081)
+To continue this session, run codex resume 019e1d95-9b4a-7c31-830f-cb768a4bf13f
